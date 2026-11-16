@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Valentino Castiglia - Agile Coach & Scrum Master, SDLC improvement with AI">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Valentino Castiglia CV</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: corporate-editorial — black statement hero (text left, portrait right) → white impact band with oversized figures → grey lifecycle tiles → two-column body; one vivid accent, no ornament */
+:root{
+  --bg:#F2F2F2; --paper:#FFFFFF; --ink:#000000; --muted:#5C5C66; --line:#E1E1E6; --tint:#F5F5F7;
+  --band:#000000; --band-ink:#FFFFFF; --band-muted:#A3A3AD; --band-line:#2B2B30;
+  --accent:#7A3CFF; --accent-ink:#FFFFFF;
+  --f-display:"Archivo", "Helvetica Neue", Arial, sans-serif;
+  --f-body:"Archivo", "Helvetica Neue", Arial, sans-serif;
+  --f-mono:"IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#050505; --paper:#0E0E10; --ink:#F4F4F6; --muted:#A0A0AA; --line:#25252B; --tint:#16161A;
+  --band:#000000; --band-ink:#FFFFFF; --band-muted:#A3A3AD; --band-line:#26262B;
+  --accent:#A47BFF; --accent-ink:#0E0E10; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#050505; --paper:#0E0E10; --ink:#F4F4F6; --muted:#A0A0AA; --line:#25252B; --tint:#16161A;
+  --band:#000000; --band-ink:#FFFFFF; --band-muted:#A3A3AD; --band-line:#26262B;
+  --accent:#A47BFF; --accent-ink:#0E0E10; color-scheme:dark}
+
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15.5px;line-height:1.55;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 56px}
+:root:not([data-lang="it"]) .it,[data-lang="it"] .en{display:none!important}
+.sheet{max-width:1080px;margin:0 auto;background:var(--paper)}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+
+/* ---------- black hero ---------- */
+.band{background:var(--band);color:var(--band-ink)}
+.bar{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 40px;font-size:13px;color:var(--band-muted);border-bottom:1px solid var(--band-line)}
+.bar strong{color:var(--band-ink);font-weight:700;letter-spacing:-.01em}
+.lang{display:inline-flex;gap:2px}
+.lang button{font:inherit;font-weight:600;background:none;border:0;color:var(--band-muted);padding:4px 8px;cursor:pointer;border-bottom:2px solid transparent}
+.lang button[aria-pressed="true"]{color:var(--band-ink);border-bottom-color:var(--accent)}
+
+.hero{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:48px;align-items:end;padding:64px 40px 56px}
+.hd{display:grid;gap:22px;min-width:0}
+.eyebrow{font-size:14px;font-weight:600;color:var(--band-muted)}
+h1{font-family:var(--f-display);font-weight:900;font-size:clamp(48px,9vw,104px);line-height:.9;letter-spacing:-.045em;margin:0;text-wrap:balance}
+.tagline{font-size:clamp(22px,3.2vw,34px);font-weight:600;line-height:1.15;letter-spacing:-.02em;margin:0;max-width:22ch;text-wrap:balance}
+.tagline b{color:var(--accent);font-weight:700}
+.contacts{display:flex;flex-wrap:wrap;gap:6px 22px;font-size:14px;color:var(--band-muted)}
+.contacts span{user-select:all}
+.contacts a{text-underline-offset:4px;text-decoration-color:var(--band-line)}
+.portrait{width:260px;max-width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 20%;display:block;filter:grayscale(1)}
+
+/* ---------- impact ---------- */
+.impact{padding:56px 40px 48px;display:grid;gap:28px;border-bottom:1px solid var(--line)}
+.sec-title{font-family:var(--f-display);font-weight:800;font-size:clamp(26px,3.6vw,40px);line-height:1.05;letter-spacing:-.03em;margin:0;text-wrap:balance}
+.sec-title .acc{color:var(--accent)}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px}
+.stat{border-top:4px solid var(--ink);padding-top:16px;display:grid;gap:10px;align-content:start;min-width:0}
+.stat .num{font-family:var(--f-display);font-weight:900;font-size:clamp(56px,8vw,96px);line-height:.9;letter-spacing:-.05em;font-variant-numeric:tabular-nums}
+.stat .num .sg{color:var(--accent)}
+.stat .lab{font-size:17px;font-weight:700;letter-spacing:-.01em}
+.stat .ds{font-size:14px;color:var(--muted)}
+.meter{display:grid;gap:5px;font-family:var(--f-mono);font-size:11px;color:var(--muted);margin-top:4px}
+.row{display:grid;grid-template-columns:38px minmax(0,1fr);align-items:center;gap:8px}
+.track{height:8px;background:var(--tint);position:relative}
+.fill{position:absolute;inset:0 auto 0 0;background:var(--line)}
+.fill.now{background:var(--accent)}
+.note{font-size:13px;color:var(--muted)}
+
+/* ---------- lifecycle ---------- */
+.life{background:var(--tint);padding:56px 40px;display:grid;gap:28px}
+.life-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px 48px;align-items:end}
+.life-head p{margin:0;font-size:16px;color:var(--muted);max-width:46ch}
+.tiles{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:2px;background:var(--line);border:2px solid var(--line)}
+.tile{background:var(--paper);padding:20px 16px 22px;display:grid;gap:8px;align-content:start;min-width:0}
+.tile .ix{font-family:var(--f-mono);font-size:12px;color:var(--accent);font-weight:500}
+.tile .ph{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.tile .cap{font-weight:800;font-size:17px;line-height:1.15;letter-spacing:-.015em}
+.tile .ds{font-size:13.5px;color:var(--muted);line-height:1.4}
+
+/* ---------- body ---------- */
+.grid{display:grid;grid-template-columns:minmax(0,1fr) 330px}
+main{padding:56px 40px;display:grid;gap:48px;align-content:start;min-width:0}
+aside{padding:56px 32px;border-left:1px solid var(--line);display:grid;gap:40px;align-content:start;min-width:0}
+h2{font-family:var(--f-display);font-weight:800;font-size:26px;letter-spacing:-.025em;line-height:1.1;margin:0 0 20px}
+aside h2{font-size:21px;margin-bottom:16px}
+p{margin:0;max-width:66ch}
+.lead{font-size:18px;line-height:1.5}
+.jobs{display:grid;gap:30px}
+.job{display:grid;gap:8px;padding-top:20px;border-top:1px solid var(--line)}
+.job:first-child{border-top:4px solid var(--ink)}
+.jh{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 16px;align-items:baseline}
+.jt{font-family:var(--f-display);font-weight:800;font-size:21px;letter-spacing:-.02em;margin:0;line-height:1.15}
+.jd{font-size:14px;font-weight:600;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+.jo{color:var(--muted);font-size:14.5px}
+.pill{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 8px;background:var(--accent);color:var(--accent-ink);vertical-align:4px;margin-left:10px}
+ul{margin:4px 0 0;padding-left:18px;display:grid;gap:6px;max-width:70ch}
+li::marker{color:var(--accent)}
+
+.list{display:grid;gap:14px;margin:0;padding:0;list-style:none}
+.list li{display:grid;gap:3px}
+.list .n{font-weight:700;line-height:1.3;letter-spacing:-.005em}
+.list .mm{font-size:13px;color:var(--muted);line-height:1.5}
+.sub{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding-bottom:6px;border-bottom:1px solid var(--line)}
+.ai-cert{padding:14px 16px;background:var(--tint);border-left:4px solid var(--accent)}
+.status{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--accent)}
+.status.wip{color:var(--muted)}
+.verify{font-weight:600;color:var(--accent);text-underline-offset:3px}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-size:13px;font-weight:500;padding:5px 10px;border:1px solid var(--line)}
+.tag.ai{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+
+@media (max-width:860px){
+  .grid{grid-template-columns:1fr}
+  aside{border-left:0;border-top:1px solid var(--line)}
+  .tiles{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .life-head{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  .bar,.hero,.impact,.life,main,aside{padding-left:20px;padding-right:20px}
+  .hero{grid-template-columns:1fr;gap:28px;padding-top:40px;padding-bottom:40px}
+  .portrait{width:150px;order:-1}
+  .stats{grid-template-columns:1fr;gap:28px}
+  .tiles{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .impact,.life,main,aside{padding-top:40px;padding-bottom:40px}
+}
+@media print{
+  body{padding:0;background:#fff}.bar{display:none}
+  .grid{grid-template-columns:1fr}aside{border:0}.job{break-inside:avoid}
+}
+</style>
+
+</head>
+<body>
+<div class="sheet">
+  <div class="band">
+    <div class="bar">
+      <span><strong>Valentino Castiglia</strong> · <span class="en">Curriculum vitae, Nov 2026</span><span class="it">Curriculum vitae, nov 2026</span></span>
+      <div class="lang" role="group" aria-label="Language">
+        <button id="btn-en" type="button" data-set="en">EN</button>
+        <button id="btn-it" type="button" data-set="it">IT</button>
+      </div>
+    </div>
+    <div class="hero">
+      <div class="hd">
+        <span class="eyebrow">Agile Coach &amp; Scrum Master · SDLC improvement with AI</span>
+        <h1>Valentino Castiglia</h1>
+        <p class="tagline"><span class="en">I bring <b>AI into the way teams build software</b>, and I measure what changes.</span><span class="it">Porto <b>l'AI nel modo in cui i team costruiscono software</b>, e misuro cosa cambia.</span></p>
+        <div class="contacts">
+          <span>+39 328 351 0568</span>
+          <span>v.castiglia@serifast.it</span>
+          <a href="https://www.linkedin.com/in/valentino-castiglia" target="_blank" rel="noopener">linkedin.com/in/valentino-castiglia</a>
+          <span class="en">Messina, Italy · Remote / Hybrid</span><span class="it">Messina · Remoto / Ibrido</span>
+        </div>
+      </div>
+      <img class="portrait" src="data:image/jpeg;base64,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" alt="Valentino Castiglia" width="260" height="325">
+    </div>
+  </div>
+
+  <section class="impact">
+    <h2 class="sec-title"><span class="en">Measured impact, <span class="acc">not promises.</span></span><span class="it">Impatto misurato, <span class="acc">non promesse.</span></span></h2>
+    <div class="stats">
+      <div class="stat">
+        <span class="num"><span class="sg">−</span>37%</span>
+        <span class="lab"><span class="en">Product cycle time</span><span class="it">Cycle time di prodotto</span></span>
+        <span class="ds"><span class="en">Ideas reach production faster.</span><span class="it">Le idee arrivano in produzione prima.</span></span>
+        <div class="meter">
+          <div class="row"><span>2024</span><div class="track"><div class="fill" style="width:100%"></div></div></div>
+          <div class="row"><span>2026</span><div class="track"><div class="fill now" style="width:63%"></div></div></div>
+        </div>
+      </div>
+      <div class="stat">
+        <span class="num"><span class="sg">+</span>55%</span>
+        <span class="lab">Velocity</span>
+        <span class="ds"><span class="en">More value delivered per sprint.</span><span class="it">Più valore consegnato per sprint.</span></span>
+        <div class="meter">
+          <div class="row"><span>2024</span><div class="track"><div class="fill" style="width:64.5%"></div></div></div>
+          <div class="row"><span>2026</span><div class="track"><div class="fill now" style="width:100%"></div></div></div>
+        </div>
+      </div>
+      <div class="stat">
+        <span class="num"><span class="sg">−</span>43%</span>
+        <span class="lab"><span class="en">Defects</span><span class="it">Bug</span></span>
+        <span class="ds"><span class="en">Higher quality in every release.</span><span class="it">Più qualità a ogni rilascio.</span></span>
+        <div class="meter">
+          <div class="row"><span>2024</span><div class="track"><div class="fill" style="width:100%"></div></div></div>
+          <div class="row"><span>2026</span><div class="track"><div class="fill now" style="width:57%"></div></div></div>
+        </div>
+      </div>
+    </div>
+    <p class="note"><span class="en">Results of the team I coach at Generali, 10/2024 → 10/2026.</span><span class="it">Risultati del team che seguo in Generali, 10/2024 → 10/2026.</span></p>
+  </section>
+
+  <section class="life">
+    <div class="life-head">
+      <h2 class="sec-title"><span class="en">AI across the <span class="acc">whole software lifecycle.</span></span><span class="it">AI lungo <span class="acc">tutto il ciclo di sviluppo.</span></span></h2>
+      <p><span class="en">An agent suite co-designed within an enterprise AI adoption program and presented to IT leadership.</span><span class="it">Una suite di agenti co-progettata in un programma enterprise di adozione dell'AI e presentata alla leadership IT.</span></p>
+    </div>
+    <div class="tiles">
+      <div class="tile"><span class="ix">01</span><span class="ph"><span class="en">Analyse</span><span class="it">Analisi</span></span><span class="cap"><span class="en">Legacy code analysis</span><span class="it">Analisi codice legacy</span></span><span class="ds"><span class="en">Rebuilds documentation from existing code</span><span class="it">Ricostruisce la documentazione dal codice</span></span></div>
+      <div class="tile"><span class="ix">02</span><span class="ph">Discovery</span><span class="cap"><span class="en">Requirements elicitation</span><span class="it">Raccolta requisiti</span></span><span class="ds"><span class="en">Guided stakeholder interviews</span><span class="it">Interviste guidate agli stakeholder</span></span></div>
+      <div class="tile"><span class="ix">03</span><span class="ph">Backlog</span><span class="cap"><span class="en">Story drafting</span><span class="it">Scrittura delle story</span></span><span class="ds"><span class="en">Drafts and refines user stories in Jira</span><span class="it">Scrive e affina le user story in Jira</span></span></div>
+      <div class="tile"><span class="ix">04</span><span class="ph"><span class="en">Plan</span><span class="it">Stima</span></span><span class="cap"><span class="en">Estimation</span><span class="it">Stime</span></span><span class="ds"><span class="en">Supports sizing and sprint planning</span><span class="it">Supporta stime e sprint planning</span></span></div>
+      <div class="tile"><span class="ix">05</span><span class="ph">Build</span><span class="cap">Spec-driven dev</span><span class="ds"><span class="en">Specification-first coding with AI assistants</span><span class="it">Sviluppo guidato da specifiche con assistenti AI</span></span></div>
+      <div class="tile"><span class="ix">06</span><span class="ph">Test</span><span class="cap"><span class="en">Test generation</span><span class="it">Generazione test</span></span><span class="ds"><span class="en">Test cases derived from specs</span><span class="it">Casi di test ricavati dalle specifiche</span></span></div>
+    </div>
+  </section>
+
+  <div class="grid">
+    <main>
+      <section>
+        <h2><span class="en">Profile</span><span class="it">Profilo</span></h2>
+        <p class="lead en">Agile Coach and Scrum Master with over 20 years of team leadership, first as a founder and project manager, then as Scrum Master in scaled agile (SAFe) environments at Eni Plenitude and Generali. I co-design and introduce AI agents that support the software lifecycle end to end, and I help delivery teams adopt them in their daily work. I sit between development teams and management, and I measure change through flow, velocity and quality.</p>
+        <p class="lead it">Agile Coach e Scrum Master con oltre 20 anni di guida di team, prima da founder e project manager, poi come Scrum Master in contesti agile scalati (SAFe) per Eni Plenitude e Generali. Co-progetto e introduco agenti AI a supporto dell'intero ciclo di sviluppo software e accompagno i team nell'adottarli nel lavoro quotidiano. Faccio da ponte tra team di sviluppo e management e misuro il cambiamento in flusso, velocity e qualità.</p>
+      </section>
+
+      <section>
+        <h2><span class="en">Experience</span><span class="it">Esperienza</span></h2>
+        <div class="jobs">
+          <article class="job">
+            <div class="jh"><h3 class="jt">Generali Italia · IT Claims<span class="pill">AI</span></h3><span class="jd">10/2024 – <span class="en">present</span><span class="it">oggi</span></span></div>
+            <div class="jo"><span class="en">Senior Consultant · Scrum Master &amp; Agile Coach in a SAFe scaled agile context · via Capgemini</span><span class="it">Senior Consultant · Scrum Master &amp; Agile Coach in contesto agile scalato SAFe · tramite Capgemini</span></div>
+            <ul class="en">
+              <li>Co-designed a suite of AI agents covering the software lifecycle (legacy code analysis, requirements elicitation, estimation, spec-driven development, test generation) within an enterprise AI adoption program, and presented it to IT leadership.</li>
+              <li>Spoke at an IT plenary on adopting AI in the software development lifecycle.</li>
+              <li>Introduced AI coding assistants (Claude Code, GitHub Copilot) for code analysis and documentation inside a restricted enterprise environment.</li>
+              <li>Act as deputy People Manager and link between the development team and management in decision forums.</li>
+              <li>Facilitated delivery through a REST service migration and the decommissioning of legacy schemas.</li>
+            </ul>
+            <ul class="it">
+              <li>Co-progettata una suite di agenti AI lungo il ciclo di sviluppo (analisi del codice legacy, raccolta requisiti, stime, sviluppo guidato da specifiche, generazione dei test) in un programma enterprise di adozione dell'AI, presentata alla leadership IT.</li>
+              <li>Intervento in una plenaria IT sull'adozione dell'AI nel ciclo di sviluppo software.</li>
+              <li>Introdotti assistenti AI per il codice (Claude Code, GitHub Copilot) per analisi e documentazione in un ambiente enterprise ristretto.</li>
+              <li>Sostituto del People Manager e anello tra team di sviluppo e management ai tavoli decisionali.</li>
+              <li>Facilitata la delivery durante la migrazione a servizi REST e la dismissione di schemi legacy.</li>
+            </ul>
+          </article>
+
+          <article class="job">
+            <div class="jh"><h3 class="jt">Eni Plenitude</h3><span class="jd">12/2021 – 12/2023</span></div>
+            <div class="jo"><span class="en">Scrum Master, two teams in a SAFe scaled agile context · Milan</span><span class="it">Scrum Master di due team in contesto agile scalato SAFe · Milano</span></div>
+            <ul class="en">
+              <li>Coached two teams towards self-organisation and supported the Product Owner in stream and cross-team events.</li>
+              <li>Ran backlog management with the PO in Azure DevOps and tracked team metrics to drive improvement.</li>
+            </ul>
+            <ul class="it">
+              <li>Accompagnati due team verso l'auto-organizzazione, con supporto al Product Owner negli eventi di stream e cross-team.</li>
+              <li>Gestione del backlog con il PO su Azure DevOps e monitoraggio delle metriche di team per il miglioramento.</li>
+            </ul>
+          </article>
+
+          <article class="job">
+            <div class="jh"><h3 class="jt">BonusX</h3><span class="jd">02/2023 – 08/2023</span></div>
+            <div class="jo"><span class="en">Scrum Master &amp; Agile Coach · startup, Milan</span><span class="it">Scrum Master &amp; Agile Coach · startup, Milano</span></div>
+            <ul class="en"><li>Introduced the Scrum framework and coached the team and PO on the agile mindset.</li></ul>
+            <ul class="it"><li>Introdotto il framework Scrum e affiancati team e PO nell'adozione della mentalità agile.</li></ul>
+          </article>
+
+          <article class="job">
+            <div class="jh"><h3 class="jt">Serifast Soc. Coop.</h3><span class="jd">2014 – 2021</span></div>
+            <div class="jo">CEO &amp; Scrum Master · Messina</div>
+            <ul class="en"><li>Majority partner of a cooperative building software, digital and print solutions for companies and public administration. Led teams of up to 9 and ran Scrum on all IT and web projects.</li></ul>
+            <ul class="it"><li>Socio di maggioranza di una cooperativa che realizza soluzioni software, digitali e di stampa per aziende e PA. Guidati team fino a 9 persone, con Scrum su tutti i progetti IT e web.</li></ul>
+          </article>
+
+          <article class="job">
+            <div class="jh"><h3 class="jt">Media Communications</h3><span class="jd">2001 – 2015</span></div>
+            <div class="jo"><span class="en">Founder &amp; CEO · agency, Messina</span><span class="it">Founder &amp; CEO · agenzia, Messina</span></div>
+            <ul class="en"><li>Founded the agency and led 3 web developers and 5 designers and print specialists.</li></ul>
+            <ul class="it"><li>Fondata l'agenzia e guidato un team di 3 web developer e 5 grafici e stampatori.</li></ul>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <aside>
+      <section>
+        <h2><span class="en">Certifications</span><span class="it">Certificazioni</span></h2>
+        <ul class="list">
+          <li class="sub">AI</li>
+          <li class="ai-cert"><span class="status"><span class="en">Certified</span><span class="it">Ottenuta</span></span><span class="n">Professional Scrum Master – AI Essentials (PSM-AI)</span><span class="mm">Scrum.org · 11/2026 · ID 1363870 · <a class="verify" href="https://www.credly.com/badges/2b9bea1b-4eae-4f21-8e0e-876d8dccf51a/public_url" target="_blank" rel="noopener"><span class="en">Verify</span><span class="it">Verifica</span> ↗</a></span></li>
+          <li class="ai-cert"><span class="status wip"><span class="en">In progress</span><span class="it">In corso</span></span><span class="n">Google Cloud Generative AI Leader</span><span class="mm">Google Cloud · <span class="en">expected</span><span class="it">prevista</span> 11/2026</span></li>
+          <li class="sub">Agile</li>
+          <li><span class="n">SAFe Advanced Scrum Master (SASM)</span><span class="mm">Scaled Agile · 2024</span></li>
+          <li><span class="n">Professional Scrum Master II (PSM II)</span><span class="mm">Scrum.org · 2021 · <a class="verify" href="https://www.credly.com/badges/c1696b74-a5ee-42e1-ab6e-e7e1fea11234/public_url" target="_blank" rel="noopener"><span class="en">Verify</span><span class="it">Verifica</span> ↗</a></span></li>
+          <li><span class="n">Professional Scrum Master I (PSM I)</span><span class="mm">Scrum.org · 2021 · <a class="verify" href="https://www.credly.com/badges/bab4a2a6-db09-4267-89e7-d134dfc13eb8/public_url" target="_blank" rel="noopener"><span class="en">Verify</span><span class="it">Verifica</span> ↗</a></span></li>
+          <li><span class="n">Professional Agile Leadership I (PAL I)</span><span class="mm">Scrum.org · 2021 · <a class="verify" href="https://www.credly.com/badges/6c5fea5c-207d-4b54-a0fb-a4aa39c6eb85/public_url" target="_blank" rel="noopener"><span class="en">Verify</span><span class="it">Verifica</span> ↗</a></span></li>
+          <li><span class="n">Professional Scrum Product Owner I (PSPO I)</span><span class="mm">Scrum.org · 2023 · <a class="verify" href="https://www.credly.com/badges/782fd970-4460-4d39-82fe-f0b07ca619fe/public_url" target="_blank" rel="noopener"><span class="en">Verify</span><span class="it">Verifica</span> ↗</a></span></li>
+          <li><span class="n">Coaching Fundamentals (ICF ACSTH)</span><span class="mm">Solution Academy · 2022</span></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2><span class="en">AI &amp; delivery toolkit</span><span class="it">Strumenti AI e delivery</span></h2>
+        <div class="tags">
+          <span class="tag ai">Claude Code</span><span class="tag ai">GitHub Copilot</span><span class="tag ai"><span class="en">AI agent design</span><span class="it">Design di agenti AI</span></span>
+          <span class="tag ai">Spec-driven development</span><span class="tag ai">Prompt engineering</span>
+          <span class="tag">Scrum</span><span class="tag">SAFe</span><span class="tag">Kanban</span><span class="tag">Lean</span>
+          <span class="tag">Jira</span><span class="tag">Azure DevOps</span>
+        </div>
+      </section>
+
+      <section>
+        <h2><span class="en">Education</span><span class="it">Formazione</span></h2>
+        <ul class="list">
+          <li><span class="n"><span class="en">Electronic Engineering (coursework)</span><span class="it">Ingegneria Elettronica (studi)</span></span><span class="mm">Politecnico di Torino · Univ. Messina · 1998–2000</span></li>
+          <li><span class="n">Fundamentals of Agile Project Management</span><span class="mm">PMI (Kickoff) · <span class="en">course</span><span class="it">corso</span> · 2023 · <a class="verify" href="https://www.credly.com/badges/d3afcf05-101a-40ac-930c-94d047d6ba02/public_url" target="_blank" rel="noopener"><span class="en">Verify</span><span class="it">Verifica</span> ↗</a></span></li>
+          <li><span class="n"><span class="en">Project Management for E-commerce</span><span class="it">Project Management per l'E-commerce</span></span><span class="mm">SSGRR · 2001</span></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2><span class="en">Languages</span><span class="it">Lingue</span></h2>
+        <ul class="list">
+          <li><span class="n"><span class="en">Italian</span><span class="it">Italiano</span></span><span class="mm"><span class="en">Native</span><span class="it">Madrelingua</span></span></li>
+          <li><span class="n"><span class="en">English</span><span class="it">Inglese</span></span><span class="mm">B2 (CEFR)</span></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2><span class="en">Also</span><span class="it">Altro</span></h2>
+        <p><span class="en">Member of Mensa Italia</span><span class="it">Membro di Mensa Italia</span></p>
+      </section>
+    </aside>
+  </div>
+</div>
+
+<script>
+(function(){
+  var root=document.documentElement;
+  function set(l){
+    if(l!=="en"&&l!=="it")l="en";
+    root.setAttribute("data-lang",l);root.lang=l;
+    document.getElementById("btn-en").setAttribute("aria-pressed",l==="en");
+    document.getElementById("btn-it").setAttribute("aria-pressed",l==="it");
+    try{localStorage.setItem("cv-lang",l)}catch(e){}
+  }
+  var start=location.hash.slice(1);
+  if(start!=="en"&&start!=="it"){try{start=localStorage.getItem("cv-lang")}catch(e){start=null}}
+  set(start||"en");
+  document.querySelectorAll(".lang button").forEach(function(b){
+    b.addEventListener("click",function(){var l=b.getAttribute("data-set");set(l);try{history.replaceState(null,"","#"+l)}catch(e){location.hash=l}});
+  });
+  window.addEventListener("hashchange",function(){set(location.hash.slice(1))});
+})();
+</script>
+
+</body>
+</html>
